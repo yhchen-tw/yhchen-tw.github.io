@@ -1,13 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>星座、血型分析</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <h1>Hello, welcome to my home</h1>
-    <a href="https://www.google.com">Google</a>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>星座、血型分析</h1>
+        </div>
+
+        <div class=" row">
+            <p>(1) 星座特質</p>
+        </div>
+
+        <hr>
+
+        <img src="./image/capricorn.jpg" alt="">
+        <img src="./image/aquarius.jpg" alt="">
+        <img src="./image/pisces.jpg" alt="">
+        <img src="./image/aries.jpg" alt="">
+        <img src="./image/taurus.jpg" alt="">
+        <img src="./image/gemini.jpg" alt="">
+        <img src="./image/cancer.jpg" alt="">
+        <img src="./image/leo.jpg" alt="">
+        <img src="./image/virgo.jpg" alt="">
+        <img src="./image/libra.jpg" alt="">
+        <img src="./image/scorpio.jpg" alt="">
+        <img src="./image/sagittarius.jpg" alt="">
+
+        <hr>
+
+        <div class="form-group row">
+
+            <div class="col">
+                <label for="example-number-input" class="col-form-label">請輸入生日 (ex: 五月二十 = 0520)</label>
+                <input class="form-control" type="number" value="0520" id="date">
+            </div>
+        </div>
+
+        <button id="star" type="button" class="btn btn-primary">查詢星座特質</button>
+
+        <div class="form-group row">
+
+            <div class="col">
+                <label for="example-number-input" class="col-form-label">結果</label>
+                <output class="form-control" type="char" id="star_sign">
+            </div>
+        </div>
+
+        <hr>    
+       
+        <div class=" row">
+            <p>(2) 血型性格</p>
+        </div>
+        
+        <hr>
+
+        <img src="./image/blood_A.jpg" alt="" height="250px">
+        <img src="./image/blood_B.jpg" alt="">
+        <img src="./image/blood_O.jpg" alt="">
+        <img src="./image/blood_AB.jpg" alt="">
+
+        <hr>
+
+        <div class="form-group row">
+
+            <div class="col">
+                <label for="example-number-input" class="col-form-label">請輸入血型 (ex: O, A, B, AB)</label>
+                <input class="form-control" type="char" value="O" id="blood_type">
+            </div>
+        </div>
+
+        <button id="blood" type="button" class="btn btn-primary">查詢血型性格</button>
+
+        <div class="form-group row">
+            
+            <div class="col">
+                <label for="example-number-input" class="col-form-label">結果</label>
+                <output class="form-control" type="char" id="blood_sign">
+            </div>
+        </div>
+
+        <hr>    
+       
+        <div class=" row">
+            <p>(3) 幸運數字</p>
+        </div>
+        
+        <div class="form-group row">
+
+            <div class="col">
+                <label for="example-number-input" class="col-form-label">請依序輸入西元出生年月日 (ex: 1 9 9 5 0 7 2 4)</label>
+            </div>
+        </div>
+
+
+        <div class="row" >
+            <div class="col-1">
+                <input class="form-control" type="number" value="1" id="a">
+            </div>
+            <div class="col-1">
+                <input class="form-control" type="number" value="9" id="b">
+            </div>
+            <div class="col-1">
+                <input class="form-control" type="number" value="9" id="c">
+            </div>
+            <div class="col-1">
+                <input class="form-control" type="number" value="5" id="d">
+            </div>
+            <div class="col-1">
+                <input class="form-control" type="number" value="0"id="e">
+            </div>
+             <div class="col-1">
+                <input class="form-control" type="number" value="7" id="f">
+            </div>
+            <div class="col-1">
+                <input class="form-control" type="number" value="2" id="g">
+            </div>
+            <div class="col-1">
+                <input class="form-control" type="number" value="4" id="h">
+            </div>
+        </div>
+
+        <hr>
+
+        <button id="cal" type="button" class="btn btn-primary">計算幸運數字</button>
+
+        <div class="form-group row">
+            <div class="col">
+                <label for="example-number-input" class="col-form-label">結果: </label>
+                <output class="form-control" type="number" id="luckynumber">                    
+            </div>
+        </div>
+
+        <hr>
+
+        <div class=" col" text align="center" ;>
+            <label for="example-number-input" class="col-form-label">參考資料: </label>
+            <div class="col">
+                <a href="http://astrodoor.cc/keyword/sign.jsp" target="_blank">占星之門-十二星座的基本性格與簡介</a>
+            </div>
+            <div class="col">
+                <a href="http://www.setn.com/News.aspx?NewsID=20337" target="_blank">三立新聞網-同一件事 (A、B、O、AB血型)反應也太不相同啦</a>
+            </div>
+            <div class="col">
+                <a href="http://blo2012.blogspot.tw/2010/06/blog-post_28.html" target="_blank">熱血狂人-4種血型分析個性</a>
+            </div>
+            <div class="col">
+                <a href="https://www.lnka.tw/html/topic/17284.html" target="_blank">靈匣-如何正確計算你的幸運數位?</a>
+            </div>           
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
