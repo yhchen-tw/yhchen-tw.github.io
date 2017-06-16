@@ -1,0 +1,35 @@
+.jumbotron {
+    background-color: aliceblue;
+    color: navy;
+    text-align: center;
+    text-shadow: 10px -7px 10px black;
+    font-style: oblique;
+    font-family: DFKai-sb;
+    border-radius: 50px;
+}
+
+.col-form-label {
+    color: #920ba5;
+    font-weight: 900;
+    font-family: DFKai-sb;
+}
+
+.btn {
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: DFKai-sb;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.row {
+    color: #ea1515;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Microsoft JhengHei;
+}
+
+img {
+    width: 170px;
+}
