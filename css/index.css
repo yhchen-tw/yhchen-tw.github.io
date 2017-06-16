@@ -33,3 +33,9 @@
 img {
     width: 170px;
 }
+
+body {
+    background-image: url(' http://d.5857.com/yzxkgqbz_110726/013.jpg ');
+    background-repeat: no-repeat;
+    background-color: #fbe0e0;
+}
